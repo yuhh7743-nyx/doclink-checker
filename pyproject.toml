@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "doclink-checker"
+version = "0.1.0"
+description = "A small Markdown file, heading, and optional HTTP link checker"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["markdown-it-py>=3,<5"]
+
+[project.scripts]
+doclink = "doclink.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

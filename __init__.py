@@ -1,0 +1,1 @@
+"""Markdown documentation link checking."""
